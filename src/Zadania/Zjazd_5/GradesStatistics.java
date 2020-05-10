@@ -25,7 +25,6 @@ public class GradesStatistics {
                 System.out.println("Something went wrong");
             }
         }
-        ;
         List<Integer> studentsGrades = new ArrayList<>(studendsNumber);
 
         for (int i = 1; i <= studendsNumber; ) {
@@ -45,7 +44,8 @@ public class GradesStatistics {
         System.out.format("%.2f%n", getMedian(studendsNumber, studentsGrades));
         System.out.println("The minimum is: " + getMinimum(studentsGrades));
         System.out.println("The maximum is: " + getMaximum(studentsGrades));
-        System.out.println("The standard deviation is: " + getStandardDeviation(studendsNumber, studentsGrades));
+        System.out.print("The standard deviation is: ");
+        System.out.format("%.2f%n", getStandardDeviation(studendsNumber, studentsGrades));
     }
 
     public double getAverage(int studendsNumber, List<Integer> studentsGrades) {
