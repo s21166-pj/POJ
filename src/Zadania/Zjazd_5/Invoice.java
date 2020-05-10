@@ -40,6 +40,6 @@ public class Invoice {
     }
 
     public double getAmountAfterDiscount() {
-        return (amount * customer.getDiscount() / 100) - amount;
+        return amount - (amount * customer.getDiscount() / 100);
     }
 }
