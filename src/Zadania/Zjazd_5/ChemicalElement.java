@@ -57,6 +57,7 @@ public class ChemicalElement {
     public boolean isMetal() {
         switch (this.atomicNumber) {
             case 13:
+            case 31:
             case 49:
             case 50:
             case 81:
